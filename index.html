@@ -31,14 +31,16 @@
     <!-- Header -->
     <header class="header">
         <nav class="header__nav">
-            <ul class="header__menu">
-                <li><a class="header__menu__item active"  href="#home">Home</a></li>
-                <li><a class="header__menu__item" href="#skills">Skill</a></li>
-                <li><a class="header__menu__item" href="#projects">Project</a></li>
-                <li><a class="header__menu__item" href="#contact">contact</a></li>
-            </ul>
-        </nav>
-
+            <div class="header_wrapper">
+                <ul class="header__menu">
+                    <li><a class="header__menu__item active"  href="#home">Home</a></li>
+                    <li><a class="header__menu__item active"  href="#about">About</a></li>
+                    <li><a class="header__menu__item" href="#skill">Skill</a></li>
+                    <li><a class="header__menu__item" href="#project">Project</a></li>
+                    <li><a class="header__menu__item" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>   
     </header>
     <!-- Main -->
     <main>
@@ -47,77 +49,128 @@
             <div class="home__container">
                 <h2 class="home__title" >Front-End</h2>
                 <p class="home__description">프론트엔드 개발자 <strong class="home__title--strong">지채빈</strong>입니다.</p>
-                <img class="home__avatar" src="images/profile.png" alt="Chaebeen's profile">
+                <img class="home__avatar" src="images/profile2.png" alt="Chaebeen's profile">
+            </div>
+        </section>
+        <!-- About me -->
+        <section id="about" class="section">
+            <div class="max-container">
+                <h2 class="title">About me</h2> 
+                <div class="about_tag">
+                    <p>#섬세함</p>
+                    <p>#긍정적</p>
+                    <p>#귀여움</p>
+                </div>
+                <div class="about_text">
+                    <p> <i class="fa-solid fa-check" style="color: #ffffff;"></i> 섬세한 성격으로...</p>
+                    <p><i class="fa-solid fa-check" style="color: #ffffff;"></i> 긍정적인 마인드로 ...</p>
+                    <p><i class="fa-solid fa-check" style="color: #ffffff;"></i> 열정을 가지고...</p>
+                </div>
             </div>
         </section>
         <!-- Skills -->
-        <section id="about" class="section max-container">
-            <H2 class="title">Skill</H2>
-            <div class="skills_container">
-                <div class="skills_item">
-                    <h2 class="skills_title">FrontEnd</h2>
-                    <div class="skills_images">
-                        <div class="skills_image_wrapper">
-                            <img class="skills_image" src="./images/skills/html.png">
+        <section id="skill" class="section">
+            <div class="max-container">
+                <h2 class="title">Skill</h2>
+                <div class="skills_container">
+                    <div class="skills_item">
+                        <h2 class="skills_title">FrontEnd</h2>
+                        <div class="skills_images">
+                            <div class="skills_image_wrapper">
+                                <img class="skills_image" src="./images/skills/html.png">
+                            </div>
+                            <div class="skills_image_wrapper">
+                            <img class="skills_image" src="./images/skills/css.png">
+                            </div>
+                            <div class="skills_image_wrapper">
+                            <img class="skills_image" src="./images/skills/js.png">
+                            </div>
+                            <div class="skills_image_wrapper">
+                            <img class="skills_image" src="./images/skills/react.png">
+                            </div>
                         </div>
-                        <div class="skills_image_wrapper">
-                        <img class="skills_image" src="./images/skills/css.png">
-                        </div>
-                        <div class="skills_image_wrapper">
-                        <img class="skills_image" src="./images/skills/js.png">
-                        </div>
-                        <div class="skills_image_wrapper">
-                        <img class="skills_image" src="./images/skills/react.png">
+                    </div>
+                    <div class="skills_item">
+                        <h2 class="skills_title">Cooperation</h2>
+                        <div class="skills_images">
+                            <div class="skills_image_wrapper">
+                                <img class="skills_image" src="./images/skills/github.png">
+                            </div>
+                            <div class="skills_image_wrapper">
+                            <img class="skills_image" src="./images/skills/notion.png">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="skills_item">
-                    <h2 class="skills_title">Cooperation</h2>
-                    <div class="skills_images">
-                        <div class="skills_image_wrapper">
-                            <img class="skills_image" src="./images/skills/github.png">
-                        </div>
-                        <div class="skills_image_wrapper">
-                        <img class="skills_image" src="./images/skills/notion.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+                </div>
             </div>
         </section>
         <!-- Projects -->
-        <section id="work" class="section">
+        <section id="project" class="section">
             <div class="max-container">
                 <h2 class="title">Project</h2>
-                <ul class="projects">
-                    <li class="project">
+                <div>
+                    <div class="project_container">
                         <img src="images/work/emotion_diary.PNG"  alt="project1" class="project__img">
-                        <div class="project__metadata">
-                            <h3 class="project__title">project1_emotion diary</h3>
-                            <p>Clone Coding with react</p>
-                            <a href = "https://emotiondiary-cheabeens-projects.vercel.app/" target="_blank">보러가기</a> 
+                        <div>
+                            <div class="project_item">
+                                <div class="project_title_wrapper">
+                                    <h2 class="project_sub_title">Emotion diary</h2>
+                                    <a href = "https://emotiondiary-cheabeens-projects.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square" style="color: #ffffff;"></i></a>
+                                </div>
+                                <div class="skills_image_wrapper">
+                                    <img class="skills_image" src="./images/skills/react.png">
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text">어쩌구 저쩌구 프로젝트 소개글</p>
+                            </div>
                         </div>
-                    </li>
-                    <br>
-                    <li class="project">
-                        <img src="images/work/sun.PNG"  alt="project2" class="project__img">
-                        <div class="project__metadata">
-                            <h3 class="project__title">project2_shopping mall</h3>
-                            <p>Clone Coding with react</p>
-                            <a href = "https://sunshop-blush.vercel.app/" target="_blank">보러가기</a> 
+                    </div>
+                    <div class="project_container">
+                        <img src="images/work/sun.PNG"  alt="project1" class="project__img">
+                        <div>
+                            <div class="project_item">
+                                <div class="project_title_wrapper">
+                                    <h2 class="project_sub_title">Emotion diary</h2>
+                                    <a href = "https://sunshop-blush.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square" style="color: #ffffff;"></i></a>
+                                </div>
+                                <div class="skills_image_wrapper">
+                                    <img class="skills_image" src="./images/skills/react.png">
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text">어쩌구 저쩌구 프로젝트 소개글</p>
+                            </div>
                         </div>
-                    </li>
-                    <br>
-                    <li class="project">
-                        <img src="images/work/hp.PNG"  alt="project3" class="project__img">
-                        <div class="project__metadata">
-                            <h3 class="project__title">project3_shopping mall</h3>
-                            <p>Clone Coding with html, css, javaScript</p>
-                            <a href = "https://jicherry.github.io/shop/" target="_blank">보러가기</a> 
+                    </div>
+                    <div class="project_container">
+                        <img src="images/work/hp.PNG"  alt="project1" class="project__img">
+                        <div>
+                            <div class="project_item">
+                                <div class="project_title_wrapper">
+                                    <h2 class="project_sub_title">Emotion diary</h2>
+                                    <a href = "https://jicherry.github.io/shop/" target="_blank"><i class="fa-solid fa-up-right-from-square" style="color: #ffffff;"></i></a>
+                                </div>
+                                <div class="skills_images">
+                                    <div class="skills_image_wrapper">
+                                        <img class="skills_image" src="./images/skills/html.png">
+                                    </div>
+                                    <div class="skills_image_wrapper">
+                                    <img class="skills_image" src="./images/skills/css.png">
+                                    </div>
+                                    <div class="skills_image_wrapper">
+                                    <img class="skills_image" src="./images/skills/js.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text">어쩌구 저쩌구 프로젝트 소개글</p>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Arrow up -->
@@ -130,21 +183,23 @@
     <!-- Footer -->
     <footer id="contact" class="section">
         <div class="max-container">
-            <h2 class="title">Let&#39;s talk</h2>
-            <p class="descriptionl">cjstkeldkdl0@naver.com</p>
+            <h2 class="footer_title">Thank You</h2>
+            <p class="descriptionl">봐주셔서 감사합니다.</p>
+            <p>낯선 기술에도 열정적으로 도전하고<br>꾸준히 발전하는 개발자가 되고 싶습니다.</p>
+
             <ul class="contact__links">
                 <li>
                     <a class="contact__link" href="https://github.com/jicherry" target="_blank" title="my github link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
+                        <i class="fa-brands fa-github" style="color: #ffffff;"></i>
                 </li>
                 <li>
-                    <a class="contact__link" href="https://velog.io/@chaebeen125/posts" target="_blank" title="my github link">
-                        <i class="fa-solid fa-note-sticky"></i>
-                    </a>
+                    <a class="contact__link" href="https://velog.io/@chaebeen125/posts" target="_blank" title="my velog link">
+                        <i class="fa-regular fa-note-sticky" style="color: #ffffff;"></i>
                 </li>
             </ul>
-            <p>ChaeBeen - All rights resreved</p>
+            <div>
+            <p class="footer_me">cjstkeldkdl0@naver.com - All rights resreved</p>
+            </div>
         </div>
     </footer>
 </body>
