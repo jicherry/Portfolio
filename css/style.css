@@ -177,22 +177,6 @@ button:focus {
 
 }
 
-.home__contact {
-    display: inline-block;
-    background-color: var(--color-accent);
-    color: var(--color-black);
-    padding: 0.5rem 1rem;
-    margin: 2rem;
-    font-weight: bold;
-    border-radius: 4px;
-}
-
-.home__contact:hover {
-    background-color: transparent;
-    color: var(--color-text);
-    outline: 2px solid var(--color-accent);
-}
-
 
 @keyframes bounce{
     to{
@@ -212,7 +196,7 @@ button:focus {
 /* About me*/
 
 #about {
-    background-color: var(--color-primary);
+    background-color: var(--color-gray);
     color: var(--color-text);
     height: 35rem;
     position: relative;
@@ -234,7 +218,7 @@ button:focus {
 /* Skills */
 
 #skill {
-    background-color: var(--color-primary);
+    background-color: var(--color-gray);
     color: var(--color-text);
     height: 35rem;
     position: relative;
@@ -271,7 +255,7 @@ button:focus {
 /* project */
 
 #project {
-    background-color: var(--color-primary);
+    background-color: var(--color-gray);
     color: var(--color-text);
     position: relative;
 
@@ -360,14 +344,29 @@ button:focus {
 }
 
 .descriptionl {
+    color: var(--color-primary-variant);
     font-size: 3rem;
     transform: translateY(-4rem);
 }
 
+.footer_add {
+    color: var(--color-primary-variant);
+}
+
+
+.footer_me a {
+    color: rgb(138, 138, 138);
+    margin-top: 2rem;
+}
+
+
 #contact {
-    background-color: var(--color-primary);
+    background-color: rgb(237, 237, 237);
     position: relative;
     color: var(--color-text);
+    height: 40rem;
+    padding-top: 10rem;
+
 }
 
 .contact__links {
@@ -375,6 +374,7 @@ button:focus {
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
+    margin-top: 0.7rem;
     font-size: 2rem;
 }
 
@@ -388,6 +388,8 @@ button:focus {
 
 .footer_me {
     color: white;
+    margin-top: 3.5rem;
+
 }
 
 
