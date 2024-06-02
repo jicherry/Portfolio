@@ -133,27 +133,46 @@ button:focus {
 #home {
     background-color: rgb(237, 237, 237);
     color: var(--color-text);
-    padding: 5rem 1rem;
-    padding-top: 7rem;
+    padding-top: 3rem;
     text-align: center;
+    height: 100vh;
+    width: 100%;
 }
+
 
 .home__avatar {
     width: 300px;
-    height: 450px;
+    height: 300px;
     object-fit: cover;
-    
+    border: 0.5rem none;
+    border-radius: 50%;
+    margin-top: 3rem;
+
 }
+
+
+.home__container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+
+}
+
 
 .home__title {
     font-size: 7.7rem;
+    height: 6rem;
     margin-bottom: 1rem;
 }
 
 
 .home__description {
     font-size: 2.3rem;
-    transform: translateY(-4.5rem);
+    /* transform: translateY(-4.5rem); */
     color: var(--color-black);
 
 }
@@ -174,11 +193,30 @@ button:focus {
     outline: 2px solid var(--color-accent);
 }
 
+
+@keyframes bounce{
+    to{
+        transform: translateY(-10px);
+    }
+}
+
+
+.home_arrow {
+    margin-top: 2rem;
+    animation: bounce 0.7s infinite alternate;
+    width: 2.5rem;
+}
+
+
+
 /* About me*/
 
 #about {
     background-color: var(--color-primary);
     color: var(--color-text);
+    height: 35rem;
+    position: relative;
+
 }
 
 .about_tag {
@@ -198,6 +236,9 @@ button:focus {
 #skill {
     background-color: var(--color-primary);
     color: var(--color-text);
+    height: 35rem;
+    position: relative;
+
 }
 .skills_container {
     display: flex;
@@ -232,6 +273,8 @@ button:focus {
 #project {
     background-color: var(--color-primary);
     color: var(--color-text);
+    position: relative;
+
 }
 
 /* .projects {
@@ -290,18 +333,24 @@ button:focus {
 /* Arrow up */
 
 .arrow-up {
+    z-index: 100;
     background-color: rgb(231, 231, 231);
     position: fixed;
-    bottom: 3.3rem;
-    right: 3rem;
+    bottom: 1rem;
+    right: 1rem;
     font-size: 3rem;
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 100%;
     text-align: center;
     transition: opacity 300ms ease-in;
 }
 
+.arrow_up_icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
 
 /* Footer */
 
@@ -317,6 +366,7 @@ button:focus {
 
 #contact {
     background-color: var(--color-primary);
+    position: relative;
     color: var(--color-text);
 }
 
