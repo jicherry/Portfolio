@@ -12,7 +12,7 @@
 --color-black: #050a13;
 --color-blue: #03e8f9;
 --color-orange: #fd6413;
---color-gray: #222223;
+--color-gray: #000000;
 
 
 /* Size */
@@ -146,7 +146,7 @@ button:focus {
     object-fit: cover;
     border: 0.5rem none;
     border-radius: 50%;
-    margin-top: 3rem;
+    margin-top: 1.7rem;
 
 }
 
@@ -158,8 +158,6 @@ button:focus {
     align-items: center;
     height: 100%;
     width: 100%;
-
-
 }
 
 
@@ -206,13 +204,16 @@ button:focus {
 .about_tag {
     display: flex;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .about_text {
-    margin-top: 2rem;
-
+    margin-top: 3.3rem;
     text-align: left;
+}
+
+.about_p {
+    margin-top: 3.5rem;
 }
 
 /* Skills */
@@ -226,7 +227,7 @@ button:focus {
 }
 .skills_container {
     display: flex;
-    gap: 8rem;
+    gap: 12rem;
 }
 .skills_images {
     display: flex;
@@ -235,9 +236,10 @@ button:focus {
 }
 
 .skills_image {
-    width: 2rem;
-    height: 2rem;
+    width: 40px;
+    height: 39px;
     margin-top: 0.5rem;
+    
 }
 
 .skills_title {
@@ -246,10 +248,10 @@ button:focus {
 }
 
 .skills_image_wrapper {
-    border: 1px solid;
-    border-radius: 0.5rem;
-    width:3.64rem;
-    height: 3rem;
+    border: 1.5px solid;
+    border-radius: 0.4rem;
+    width: 4.2rem;
+    height: 3.6rem;
 }
 
 /* project */
@@ -258,8 +260,8 @@ button:focus {
     background-color: var(--color-gray);
     color: var(--color-text);
     position: relative;
-
 }
+
 
 /* .projects {
     display: grid;
@@ -268,24 +270,21 @@ button:focus {
     gap: 1rem;
 } */
 
-.project {
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
-}
+
 
 .project_container {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 7rem;
+    padding-bottom: 7.5rem;
+    margin-top: 2.2rem;
 }
 
 
 
 .project__img{
-    width: 25rem;
-    height: 20rem;
-    border-radius: 0.2rem;
+    width: 28rem;
+    height: 22rem;
+    border-radius: 0.4rem;
 
 }
 
@@ -294,19 +293,33 @@ button:focus {
     border-bottom: 0.5px solid #f2f2f7;
     padding-bottom : 15px;
     width: 500px;
+    margin-bottom: 1rem;
     
 }
 
-.project_sub_title {
-    text-align: left;
-}
 
 .project_title_wrapper {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     margin: 0 auto;
+    margin-top: -0.4rem;
 }
+
+
+.project_title_wrapper i {
+    margin-bottom: 0.4rem;
+    margin-left: -0.7rem
+
+}
+
+
+.project_sub_title {
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+
 
 .text {
     text-align: left;
@@ -341,6 +354,8 @@ button:focus {
 
 .footer_title {
     font-size: 7.7rem;
+    animation: fadein 5s ease 3s;
+    
 }
 
 .descriptionl {
@@ -351,12 +366,8 @@ button:focus {
 
 .footer_add {
     color: var(--color-primary-variant);
-}
-
-
-.footer_me a {
-    color: rgb(138, 138, 138);
-    margin-top: 2rem;
+    font-size: 1.3rem; 
+    margin-top: -0.5rem;   
 }
 
 
@@ -369,13 +380,15 @@ button:focus {
 
 }
 
+
 .contact__links {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    padding: 1rem;
-    margin-top: 0.7rem;
+    padding: 2rem;
+    margin-top: 6rem;
     font-size: 2rem;
+    margin-left: 1rem;
 }
 
 .contact__links:hover {
@@ -384,12 +397,12 @@ button:focus {
 
 .contact__link {
     transition: color 250ms ease-in;
+    
 }
 
 .footer_me {
-    color: white;
-    margin-top: 3.5rem;
-
+    margin-top: -0.5rem;
+    color: rgb(145, 145, 145);
 }
 
 
