@@ -216,6 +216,8 @@ button:focus {
     margin-top: 3.5rem;
 }
 
+
+
 /* Skills */
 
 #skill {
@@ -285,7 +287,6 @@ button:focus {
     width: 28rem;
     height: 22rem;
     border-radius: 0.4rem;
-
 }
 
 
@@ -354,8 +355,7 @@ button:focus {
 
 .footer_title {
     font-size: 7.7rem;
-    animation: fadein 5s ease 3s;
-    
+    top: 2rem;
 }
 
 .descriptionl {
@@ -363,6 +363,16 @@ button:focus {
     font-size: 3rem;
     transform: translateY(-4rem);
 }
+
+.footer_fade {
+    opacity: 0;
+}
+
+.fadein {
+    opacity: 1;
+    transition: 1.3s ease-in-out;
+}
+
 
 .footer_add {
     color: var(--color-primary-variant);
