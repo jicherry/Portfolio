@@ -24,7 +24,10 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* font-family: 'Open Sans', sans-serif; */
     margin: 0;
 }
 
@@ -119,14 +122,11 @@ button:focus {
     padding: 8px 16px;
 }
 
-.header__menu__item:hover {
+/* .header__menu__item:hover {
     border-bottom: 1px soild var(--color-accent-variant);
-}
+} */
 
-.header__menu__item.active {
-    /* border: 1px solid var(--color-accent-variant); */
-    
-}
+
 
 /* Home */
 
@@ -416,19 +416,15 @@ button:focus {
 }
 
 
+
+/* 반응형 */
+
 @media screen and (max-width : 768px) {
     .section {
         padding: 3rem 2rem;
     }
 
-    .title {
-        font-size: 2rem;
-    }
-
-    .description {
-        font-size: 1rem;
-    }
-
+    /* header */    
     .header {
         flex-direction: column;
         align-items: start;
@@ -445,33 +441,78 @@ button:focus {
         width: 100%;
     }
 
-
+    /* home */
     #home {
         padding-bottom: 3rem;
     }
 
-    .hom__title {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
+    .home__container {
+        position: absolute;
     }
 
-    .majors {
-        flex-direction: column;
-        align-items: center;
+    .home__title {
+        font-size: 3rem;
     }
 
-    .major {
-        max-width: 25rem;
+    .home__description {
+
     }
 
+    /* about */
+    #about {
+
+    }
+
+    .about_tag {
+
+    }
+
+    .about_text {
+
+    }
+
+    .about_p {
+
+    }
+
+
+    /* skill */ 
     .skills {
         grid-template-columns: 1fr;
     }
 
+    .skils_title {
+
+    }
+
+    .skills_image_wrapper {
+
+    }
+
+    .skills_image {
+
+    }
+
+
+    /* project */
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .project__img {
+
+    }
+
+    .project_sub_title {
+
+    }
+
+    .text {
+
+    }
+
+
+    /* arrow */
     .arrow-up {
         font-size: 2rem;
         width: 3rem;
@@ -479,4 +520,27 @@ button:focus {
         bottom: 1.5rem;
         right: 1.5rem;
     }
+
+
+    /* footer */
+    .footer_fade {
+
+    }
+
+    .contact__links {
+
+    }
+
+    .contact__link {
+
+    }
+
+    .footer_me {
+        
+    }
+
+
+
+
+
 }
