@@ -411,7 +411,7 @@ button:focus {
 }
 
 .footer_me {
-    margin-top: -0.5rem;
+    margin-top: -1.3rem;
     color: rgb(145, 145, 145);
 }
 
@@ -424,22 +424,27 @@ button:focus {
         padding: 3rem 2rem;
     }
 
-    /* header */    
-    .header {
-        flex-direction: column;
-        align-items: start;
+    .title {
+        font-size: 2rem;
     }
 
+    .description {
+        font-size: 1rem;
+    }
+
+    /* header */    
+    .header {
+        display: flex;
+    } 
+
+
     .header__menu {
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem 4rem;
+        /* flex-direction: column; */
+        padding: 1rem;
+        margin-right: 30.5rem;
         gap: 1rem;
     }
 
-    .header__nav {
-        width: 100%;
-    }
 
     /* home */
     #home {
@@ -447,100 +452,89 @@ button:focus {
     }
 
     .home__container {
-        position: absolute;
+        position: relative;
     }
 
     .home__title {
         font-size: 3rem;
+        margin-top: 5.5rem;
     }
 
     .home__description {
-
+        font-size: 1rem;
+        margin-top: -2.5rem;
     }
 
-    /* about */
-    #about {
-
+    .home__avatar {
+        padding: 2rem;
+        margin-top: -0.5rem;
     }
 
-    .about_tag {
-
-    }
-
-    .about_text {
-
-    }
-
-    .about_p {
-
+    .home_arrow {
+        margin-top: -0.3rem;
     }
 
 
     /* skill */ 
-    .skills {
-        grid-template-columns: 1fr;
+    .skills_container {
+        display: block;
     }
 
-    .skils_title {
-
+    .skills_title {
+        font-size: 1.2rem; 
+        margin-top: 2rem;   
     }
 
-    .skills_image_wrapper {
-
-    }
-
-    .skills_image {
-
-    }
 
 
     /* project */
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
+    .project_container {
+        display: block;
     }
 
-    .project__img {
 
+    .project__img {
+        border-radius: 0.5rem;
+        width: 15rem;
+        height: 15rem;
+        margin-right: 12rem;
+        margin-bottom: 2rem;
+        
     }
 
     .project_sub_title {
+        font-size: 1.1rem;
+    }
 
+    a {
+        margin-left: -0.5rem;
+        margin-top: -0.2rem;
     }
 
     .text {
-
+        font-size: 1rem;
     }
+
 
 
     /* arrow */
     .arrow-up {
         font-size: 2rem;
-        width: 3rem;
-        height: 3rem;
-        bottom: 1.5rem;
-        right: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+        bottom: 2rem;
+        right: 1rem;
     }
 
 
     /* footer */
-    .footer_fade {
-
+    .footer_title {
+        font-size: 3rem;
     }
 
-    .contact__links {
-
+    .descriptionl {
+        font-size: 2rem;
+        margin-top: 2rem;
     }
-
-    .contact__link {
-
-    }
-
-    .footer_me {
-        
-    }
-
-
-
-
 
 }
