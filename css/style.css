@@ -413,6 +413,12 @@ button:focus {
         padding: 3rem 2rem;
     }
 
+    html,
+    body{
+        width:100%;
+        overflow-x:hidden;
+    }
+
     .title {
         font-size: 2rem;
     }
@@ -428,19 +434,7 @@ button:focus {
     }
 
 
-    .header__menu {
-        padding: 1rem;
-        margin-right: 30.5rem;
-        gap: 1rem;
-    }
-
-
     /* home */
-    .home__container {
-        width: 29rem;
-        margin: 0;
-    }
-
     .home__title {
         font-size: 3.5rem;
         margin-top: 4rem;
