@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chaebeen&#39;s Portfolio</title>
+    <title>PORTFOLIO</title>
     <meta name="description" 
     content="portfolio for world-renowned software engineer chaebeen" />
     <meta name="author" content="chaebeen" />
@@ -14,9 +14,9 @@
     <mata property="og: url" content="배포 후에 생성된 URL" />
     <mata property="og: image" content="배포 후에 생성된 이미지 URL" />
     <!-- Google Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,192 +34,105 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <nav class="header__nav">
+        <nav class="header_nav">
             <div class="header_wrapper">
-                <ul class="header__menu">
-                    <li><a class="header__menu__item active"  href="#home">Home</a></li>
-                    <li><a class="header__menu__item active"  href="#about">About</a></li>
-                    <li><a class="header__menu__item" href="#skill">Skill</a></li>
-                    <li><a class="header__menu__item" href="#project">Project</a></li>
-                    <li><a class="header__menu__item" href="#contact">Contact</a></li>
+                <ul class="header_menu">
+                    <div>
+                        <a class="header_menu_item" href="https://github.com/jicherry" target="_blank" title="my github link">
+                            GitHub
+                        <a class="header_menu_item" href="https://velog.io/@chaebeen125/posts" target="_blank" title="my velog link">
+                            Velog
+                        <a class="header_menu_item" href="mailto:cjstkeldkdl0@naver.com" target="_blank" title="cjstkeldkdl0@naver.com">Contact</a>
+                    </div>
+                    
                 </ul>
             </div>
-        </nav>   
     </header>
     <!-- Main -->
     <main>
         <!-- Home -->
         <section id="home">
-            <div class="home__container">
-                <h2 class="home__title">Front-End</h2>
-                <p class="home__description">프론트엔드 개발자 <strong class="home__title--strong">지채빈</strong>입니다.</p>
-                <img class="home__avatar" src="images/profile.png" alt="Chaebeen's profile">
-                <img class="home_arrow" src="images/arrows.png">
-            </div>
-        </section>
-        <!-- About me -->
-        <section id="about" class="section">
-            <div class="max-container">
-                <h2 class="title">About me</h2> 
-                <div class="about_tag">
-                    <p>#적극적</p>
-                    <p>#창의력</p>
-                    <p>#열정적</p>
-                </div>
-                <div class="about_text">
-                    <p class="about_p"> <i class="fa-solid fa-check" style="color: #ffffff;"></i> 문제에 맞닥뜨렸을 때 수동적인 자세보다는 깊은 고민을 통해 적극적인 태도로 해결하려 합니다.</p>
-                    <p class="about_p"><i class="fa-solid fa-check" style="color: #ffffff;"></i> 창의적인 접근과 발상으로 사용자에게 효율적인 솔루션을 제공하려고 노력합니다. </p>
-                    <p class="about_p"><i class="fa-solid fa-check" style="color: #ffffff;"></i> 낯선 기술에도 호기심을 가지고 배움을 즐기는 열정파입니다.</p>
-                    
-                </div>
-            </div>
-        </section>
-        <!-- Skills -->
-        <section id="skill" class="section">
-            <div class="max-container">
-                <h2 class="title">Skill</h2>
-                <div class="skills_container">
-                    <div class="skills_item">
-                        <h2 class="skills_title">FrontEnd</h2>
-                        <div class="skills_images">
-                            <div class="skills_image_wrapper">
-                                <img class="skills_image" src="./images/skills/html.png">
-                            </div>
-                            <div class="skills_image_wrapper">
-                            <img class="skills_image" src="./images/skills/css.png">
-                            </div>
-                            <div class="skills_image_wrapper">
-                            <img class="skills_image" src="./images/skills/js.png">
-                            </div>
-                            <div class="skills_image_wrapper">
-                            <img class="skills_image" src="./images/skills/react.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills_item">
-                        <h2 class="skills_title">Cooperation</h2>
-                        <div class="skills_images">
-                            <div class="skills_image_wrapper">
-                                <img class="skills_image" src="./images/skills/git.png">
-                            </div>
-                            <div class="skills_image_wrapper">
-                            <img class="skills_image" src="./images/skills/notion.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                </div>
+            <div class="home_container">
+                <h3 class="home_title left">CHAEBEEN'S</h3>
+                <h3 class="home_title right">PORTFOLIO</h3>
+                <img class="home_arrow" src="/images/arrows.png">
             </div>
         </section>
         <!-- Projects -->
         <section id="project" class="section">
+            <h2 class="p_title">&nbsp;PROJECTS</h2>
             <div class="max-container">
-                <h2 class="title">Project</h2>
-                <div>
-                    <div class="project_container">
-                        <img src="images/work/emotion_diary.PNG"  alt="project1" class="project__img">
-                        <div>
-                            <div class="project_item">
-                                <div class="project_title_wrapper">
-                                    <h2 class="project_sub_title">Emotion diary</h2>
-                                    <a href = "https://emotiondiary-cheabeens-projects.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square" style="color: #ffffff;"></i></a>
-                                </div>
-                                <div class="skills_image_wrapper">
-                                    <img class="skills_image" src="./images/skills/react.png">
-                                </div>
+                <div class="project_container">
+                    <h2>SUREBASE</h2>
+                    <div class="project_wrapper">
+                        <div class="project_img">
+                            <img class="work_img" src="/images/work/hp2.PNG">
+                        </div>
+                        <div class="project_item">
+                            <h3 class="content">화장품 브랜드 홈페이지를 참고하여 만든<br>뷰티 쇼핑몰 사이트입니다</h3>
+                            <button class="content_tab" onclick="window.open('https://jicherry.github.io/shop/', '_blank')">보러가기</button>
+                            <div class="skills">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
                             </div>
-                            <div>
-                                <p class="text"> 일기를 작성하는 서비스로 감정까지 함께 기록할 수 있는 사이트입니다.
-                                    <br>감정 점수를 필터링 해서 과거의 감정까지 확인이 가능하며<br> 
-                                    게시글 생성, 수정, 삭제 기능과 게시글 정렬 (최신순, 오래된순)<br> 
-                                    기능 또한 구현하였습니다.<br>
-                                </p>
+                        </div>      
+                    </div>
+                </div>
+                <div class="project_container">
+                    <h2 class="h2_right">LONGINES</h2>
+                    <div class="project_wrapper">
+                        <div class="project_item">
+                            <h3 class="content">리액트 서비스 기반으로 만든 쇼핑몰 사이트입니다.</h3>
+                            <button class="content_tab">보러가기</button>
+                            <div class="skills">
+                                <span>React</span>
+                                <span>tailwindcss</span>
+                            </div>
+                        </div>
+                        <div class="project_img">
+                            <img class="work_img" src="/images/work/longines.PNG">
+                        </div>
+                        
+                    </div> 
+                </div>
+                <div class="project_container">
+                    <h2>EMOTION_DIARY</h2>
+                    <div class="project_wrapper">
+                        <div class="project_img">
+                            <img class="work_img" src="/images/work/emotion_diary.PNG">
+                        </div>
+                        <div class="project_item">
+                            <h3 class="content">감정까지 함께 기록할 수 일기장 사이트입니다.</h3>
+                            <button class="content_tab">보러가기</button>
+                            <div class="skills">
+                                <span>React</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project_container">
-                        <img src="images/work/shoppy.PNG"  alt="project1" class="project__img">
-                        <div>
-                            <div class="project_item">
-                                <div class="project_title_wrapper">
-                                    <h2 class="project_sub_title">SHOPPY</h2>
-                                    <a href = "https://shoppy-ruby.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square" style="color: #ffffff;"></i></a>
-                                </div>
-                                <div class="skills_image_wrapper">
-                                    <img class="skills_image" src="./images/skills/react.png">
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text">shoppy 는 리액트 서비스 기반으로 만든 쇼핑몰 사이트입니다.
-                                    <br>로그인을 하면 상품 클릭시 상세페이지로 이동하여 옵션 선택이 가능하고<br>
-                                    장바구니에 원하는 상품도 추가할 수 있습니다.<br>
-                                    장바구니를 클릭하면 장바구니에 담긴 아이템들을 볼 수 있으며<br>
-                                    원하는 만큼 수량을 조절하여 추가 혹은 삭제도 가능합니다.<br>
-                                    또한 어드민 계정 이용시에는 새로운 제품을 등록할 수 있도록 구현하였습니다.
-                                </p>
+                </div>
+                <div class="project_container">
+                    <h2 class="h2_right">YOUTUBE</h2>
+                    <div class="project_wrapper">
+                        <div class="project_item">
+                            <h3 class="content">유튜브 공식 사이트를 클론 코딩하여 만든 웹 사이트입니다.</h3>
+                            <button class="content_tab">보러가기</button>
+                            <div class="skills">
+                                <span>React</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="project_container">
-                        <img src="images/work/youtube.PNG"  alt="project1" class="project__img">
-                        <div>
-                            <div class="project_item">
-                                <div class="project_title_wrapper">
-                                    <h2 class="project_sub_title">YOUTUBE</h2>
-                                    <a href = "https://youtube-omega-pink.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square" style="color: #ffffff;"></i></a>
-                                </div>
-                                <div class="skills_image_wrapper">
-                                    <img class="skills_image" src="./images/skills/react.png">
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text">youtube 오픈 API를 이용해,<br> 
-                                실제 youtube 데이터를 사용해서 만든 사이트로<br>
-                                상단에는 현시점 youtube 웹 애플리케이션과 동일하게<br> 
-                                로고와 검색이 가능한 배너가 있으며 원하는 키워드로 검색도 가능하고<br> 
-                                영상 클릭시 상세페이지로 이동하면서 영상 재생 또한 가능합니다. 
-                                
-                                
-                                </p>
-                            </div>
+                        <div class="project_img">
+                            <img class="work_img" src="/images/work/youtube.jpg">
                         </div>
-                    </div>
-                    <div class="project_container">
-                        <img src="images/work/hp.PNG"  alt="project1" class="project__img">
-                        <div>
-                            <div class="project_item">
-                                <div class="project_title_wrapper">
-                                    <h2 class="project_sub_title">SUREBASE</h2>
-                                    <a href = "https://jicherry.github.io/shop/" target="_blank"><i class="fa-solid fa-up-right-from-square" style="color: #ffffff;"></i></a>
-                                </div>
-                                <div class="skills_images">
-                                    <div class="skills_image_wrapper">
-                                        <img class="skills_image" src="./images/skills/html.png">
-                                    </div>
-                                    <div class="skills_image_wrapper">
-                                    <img class="skills_image" src="./images/skills/css.png">
-                                    </div>
-                                    <div class="skills_image_wrapper">
-                                    <img class="skills_image" src="./images/skills/js.png">
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text">surebase 홈페이지를 참고하여 만든 뷰티 쇼핑몰로
-                                <br>처음으로 만든 사이트이자 자바스크립트의 장점을<br> 
-                                확실히 알게된 계기가 되었던 프로젝트이기도 합니다.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                        
+                    </div> 
                 </div>
             </div>
         </section>
         <!-- Arrow up -->
         <aside>
             <a class="arrow-up" href="#home" title="back to top">
-                <img class="arrow_up_icon" src="./images/arrow-top.png">
+                <img class="arrow_up_icon" src="/images/arrow_top.png">
             </a>
         </aside>
     </main>
@@ -227,26 +140,10 @@
     <footer id="contact" class="section">
         <div class="max-container">
             <div class="footer_fade">
-                <h2 class="footer_title fadein">Thank You</h2>
-                <p class="descriptionl fadein">감사합니다.</p>
+                <p class="footer_title">현재에 머무르지 않고,<br>꾸준히 노력하는 개발자가 되겠습니다.<br>감사합니다.</p>
             </div>
-
-            <ul class="contact__links">
-                <li>
-                    <a class="contact__link" href="https://github.com/jicherry" target="_blank" title="my github link">
-                        <i class="fa-brands fa-github"></i>
-                </li>
-                <li>
-                    <a class="contact__link" href="https://velog.io/@chaebeen125/posts" target="_blank" title="my velog link">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                </li>
-                <li>
-                    <a class="contact__link" href="mailto:cjstkeldkdl0@naver.com" target="_blank" title="cjstkeldkdl0@naver.com">
-                        <i class="fa-solid fa-envelope"></i>
-                </li>
-            </ul>
-            <div class="footer_me">Copyright 2024. chaebeen all rights reserved.</div>
         </div>
+            <div class="footer_me">Copyright 2024. chaebeen all rights reserved.</div>
     </footer>
 </body>
 </html> 
