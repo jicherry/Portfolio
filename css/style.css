@@ -247,17 +247,21 @@ h2 {
   padding: 1rem;
   color: #ffffff;
   outline: none;
+  cursor: pointer;
 }
 
 .content_tab:hover {
   font-weight: lighter;
+  transform: scale(1);
+  transition-duration: 0.5s;
   background-color: white;
   color: #000000;
 }
 
 .skills span {
-  margin-top: 4rem;
-  margin-left: 0.3rem;
+  border: solid;
+  border-width: 0 0 1px;
+  margin-left: 0.5rem;
 }
 
 /* Arrow up */
