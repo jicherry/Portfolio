@@ -91,14 +91,31 @@ button {
 }
 
 .header_menu_item {
-  border: solid;
-  border-width: 0 0 1px;
   margin: 0.5em;
   color: #000000;
 }
 
-.header_menu_item:hover {
-  color: #6b6a6a;
+.header_menu_item {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.header_menu_item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.3em;
+  width: 100%;
+  height: 0.1em;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+.header_menu_item:hover::after {
+  transform: scaleX(1);
 }
 
 /* Home */
@@ -334,14 +351,6 @@ h2 {
     overflow-x: hidden;
   }
 
-  .title {
-    font-size: 2rem;
-  }
-
-  .description {
-    font-size: 1rem;
-  }
-
   /* header */
   .header_wrapper {
     display: flex;
@@ -350,58 +359,62 @@ h2 {
 
   /* home */
   .home_title {
-    font-size: 3.5rem;
-    margin-top: 4rem;
+    font-size: 2.7rem;
+    margin-top: 10rem;
   }
 
-  .home_description {
-    font-size: 1.2rem;
-    margin-top: -3.7rem;
+  .home_title.left {
+    margin-left: 2rem;
+    animation: slideInLeft 1s forwards;
+    margin-bottom: -9rem;
   }
 
-  .home_avatar {
-    padding: 2rem;
-    margin-top: -0.5rem;
+  .home_title.right {
+    margin-right: 2rem;
   }
 
   .home_arrow {
-    margin-top: -0.3rem;
+    margin-top: 3rem;
   }
 
-  /* skill */
-  .skills_container {
-    display: block;
+  /* project */
+
+  .p_title {
+    font-size: 2rem;
+    letter-spacing: 1rem;
   }
 
-  .skills_title {
-    font-size: 1.2rem;
-    margin-top: 2rem;
+  .work_img {
+    width: 10rem;
+    height: 10rem;
   }
 
-  .project_img {
-    border-radius: 0.5rem;
-    width: 15rem;
-    height: 15rem;
-    margin-right: 12rem;
-    margin-bottom: 2rem;
+  .project_container h2 {
+    font-size: 1.5rem;
   }
 
-  .project_item {
-    border-bottom: 0.2px solid #f2f2f7;
-    width: 25rem;
+  .content {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 0;
   }
 
-  .project_sub_title {
-    font-size: 1.1rem;
-  }
-
-  a {
-    margin-left: -0.5rem;
-    margin-top: -0.2rem;
-  }
-
-  .text {
+  .h2_right {
+    text-align: right;
+    margin-left: 7rem;
     font-size: 1rem;
+  }
+
+  .content_tab {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    width: 5rem;
+    padding: 0.3rem 0.3rem;
+  }
+
+  .skills {
+    margin-top: -2.3rem;
   }
 
   /* arrow */
@@ -409,7 +422,7 @@ h2 {
     width: 1.5rem;
     height: 1.5rem;
     bottom: 2rem;
-    right: 0.8rem;
+    right: 1.5rem;
   }
 
   .arrow_up_icon {
@@ -420,11 +433,10 @@ h2 {
 
   /* footer */
   .footer_title {
-    font-size: 3rem;
+    font-size: 1.2rem;
   }
 
-  .descriptionl {
-    font-size: 2rem;
-    margin-top: 2rem;
+  .footer_me {
+    font-size: 0.7rem;
   }
 }
