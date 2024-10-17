@@ -1,21 +1,33 @@
-//Home 섹션 아래로 스크롤시 투명하게 처리함
+//Home 섹션 아래로 스크롤시 투명하게 처리
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+  if (window.scrollY > 610) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
 
 const home = document.querySelector(".home__container");
 
-// const home = document.querySelector(".home__container");
-// document.addEventListener("scroll", () => {
-//   home.style.opacity = 1 - window.scrollY / (homeHeight / 2.5);
-// });
-
-// Arrow up 버튼을 아래로 스크롤시 투명하게 처리함
-
-// const homeHeight = home.offsetHeight;
 const arrowUp = document.querySelector(".arrow-up");
 document.addEventListener("scroll", () => {
   if (window.scrollY > homeHeight / 2) {
     arrowUp.style.opacity = 1;
   } else {
     arrowUp.style.opacity = 0;
+  }
+});
+
+//arrow up
+window.addEventListener("scroll", function () {
+  const arrowUp = document.querySelector(".arrow-up");
+  const scrollY = window.scrollY || window.pageYOffset;
+
+  if (document.body.scrollHeight - window.innerHeight - scrollY < 200) {
+    arrowUp.classList.add("show");
+  } else {
+    arrowUp.classList.remove("show");
   }
 });
 
@@ -34,10 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: 0.5, // 요소의 10%가 보일 때 trigger
+      threshold: 0.5, //
     }
   );
-  // 모든 content_tab 요소를 관찰하도록 설정
+
+  // 모든 content_tab 요소
   targets.forEach((target) => observer.observe(target));
 
   const targetFooter = document.querySelector(".footer_fade");

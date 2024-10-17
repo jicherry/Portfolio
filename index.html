@@ -16,6 +16,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,119 +35,177 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <nav class="header_nav">
-            <div class="header_wrapper">
-                <ul class="header_menu">
-                    <div>
-                        <a class="header_menu_item" href="https://github.com/jicherry" target="_blank" title="my github link">
-                            GitHub
-                        <a class="header_menu_item" href="https://velog.io/@chaebeen125/posts" target="_blank" title="my velog link">
-                            Velog
-                        <a class="header_menu_item" href="mailto:cjstkeldkdl0@naver.com" target="_blank" title="cjstkeldkdl0@naver.com">Contact</a>
-                    </div>
-                </ul>
-            </div>
+        <div>
+            <a class="main_home" href="index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <ul class="nav">
+            <li class="main_container"><a href="#about">ABOUT ME</a></li>
+            <li class="main_container"><a href="#project">PORTFOLIO</a></li>
+        </ul>
     </header>
-    <main>
-        <!-- Main -->
+        <!-- Home -->
         <section id="home">
             <div class="home_container">
-                <h3 class="home_title left">CHAEBEEN'S</h3>
-                <h3 class="home_title right">PORTFOLIO</h3>
-                <img class="home_arrow" src="/images/arrows.png">
+                <h2 class="home_title1">welcome, <br>My</h2>
+                <h2 class="home_title2">PORTFOLIO</h2>
+            </div>
+        </section>
+        <!-- About me -->
+        <section id="about" class="section">
+            <h2 class="a_title">About &nbsp;Me</h2>
+            <div id="about_content">
+                <div>
+                    <img class="me_img" src="images/me/chaebeen.png">
+                </div>
+                <div>
+                    <p class="me_content">
+                    안녕하세요!<br>
+                    신입 웹퍼블리셔,<br>
+                    지채빈 입니다.<br>
+                    </p>
+                    <p class="me_content2">
+                        저는 웹 개발에 대한 열정과 디자인 감각을 가지고 있으며,<br>
+                        HTML, CSS, JavaScript 등을 활용하여<br> 사용자 친화적인 웹사이트를 만드는 것을 목표로 하고 있습니다.<br>
+                        그린컴퓨터아카데미에서
+                        웹 개발 양성 과정을 수료하였고,<br>
+                        이후 한국정보교육원에서는
+                        웹 프론트엔드 클라우드<br> 
+                        콘솔 개발자 양성 과정을 수료하였습니다.
+                    </p>
+                </div>
             </div>
         </section>
         <!-- Projects -->
         <section id="project" class="section">
             <h2 class="p_title">&nbsp;PROJECTS</h2>
             <div class="max-container">
+                <!--1번-->
                 <div class="project_container">
-                    <h2>SUREBASE</h2>
-                    <div class="project_wrapper">
-                        <div class="project_img">
-                            <img class="work_img" src="/images/work/hp2.PNG">
-                        </div>
-                        <div class="project_item">
-                            <h3 class="content">화장품 브랜드를<br> 참고하여 만든 뷰티 쇼핑몰 사이트로<br> 
-                            메인 페이지와 상품 페이지로 구성되어 있습니다.</h3>
-                            <button class="content_tab" onclick="window.open('https://serumkind.vercel.app/', '_blank')">보러가기</button>
-                            <div class="skills">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                        </div>      
-                    </div>
-                </div>
-                <div class="project_container">
-                    <h2 class="h2_right">LONGINES</h2>
                     <div class="project_wrapper">
                         <div class="project_item">
-                            <h3 class="content">리액트 서비스 기반으로 만든 사이트로<br>
-                            로그인시 장바구니에 상품 추가가 가능하고<br>
-                            어드민 계정은 상품 등록 또한 가능합니다.</h3>
-                            <button class="content_tab" onclick="window.open('https://longines.vercel.app/', '_blank')">보러가기</button>
-                            <div class="skills">
-                                <span>React</span>
-                                <span>tailwindcss</span>
+                            <div class="project_img">
+                                <img class="work_img" src="/images/work/memoryGame.jpg">
                             </div>
-                        </div>
-                        <div class="project_img">
-                            <img class="work_img" src="/images/work/longines.PNG">
-                        </div>
-                        
+                            <h3 class="project_title">memory game</h3>
+                            <h3 class="content">티피닝 캐릭터로 만든 memory game은<br>
+                                캐릭터가 있는 카드의 앞면을 화면에 3초 동안 보여줍니다.<br> 
+                                3초 뒤, 플레이어는 카드의 위치와 캐릭터를 기억해서<br>
+                                짝이 맞는 카드를 찾아 짝을 맞추는 간단한 게임입니다.</h3>
+                                <div class="skill">
+                                    Skillsㅣ HTML5, 
+                                    CSS3,
+                                    JavaScript
+                                </div>
+                            <button class="content_tab" onclick="window.open('https://card-game-livid.vercel.app/', '_blank')">보러가기</button>
+                        </div>  
+                            <div class="project_item">
+                                <div class="project_img">
+                                    <img class="work_img" src="/images/work/hp2.PNG">
+                                </div>
+                                <h3 class="project_title">SERUMKIND</h3>
+                                <h3 class="content">화장품 브랜드를<br> 참고하여 만든 뷰티 쇼핑몰 사이트로<br> 
+                                메인 페이지와 상품 페이지로 구성되어 있습니다.</h3>
+                                <div class="skill">
+                                    Skillsㅣ HTML5, 
+                                    CSS3,
+                                    JavaScript,
+                                    jQuery
+                                </div>
+                                <button class="content_tab" onclick="window.open('https://serumkind.vercel.app/', '_blank')">보러가기</button>
+                            </div>      
+                        </div>    
                     </div> 
                 </div>
+                <!--2번-->
                 <div class="project_container">
-                    <h2>EMOTION_DIARY</h2>
                     <div class="project_wrapper">
-                        <div class="project_img">
-                            <img class="work_img" src="/images/work/emotion_diary.PNG">
-                        </div>
                         <div class="project_item">
+                            <div class="project_img">
+                                <img class="work_img" src="/images/work/longines.PNG">
+                            </div>
+                            <h3 class="project_title">longines</h3>
+                            <h3 class="content">리액트 서비스 기반으로 만든 론진 시계 사이트로<br>
+                            로그인시 상세페이지에서 장바구니에 상품 추가가 가능하며<br>
+                            어드민 계정은 상품 등록 또한 가능합니다.</h3>
+                            <div class="skill">
+                                Skillsㅣ react, 
+                                tailwind css
+                            </div>
+                            <button class="content_tab" onclick="window.open('https://longines.vercel.app/', '_blank')">보러가기</button>
+                        </div>  
+                        <div class="project_item">
+                            <div class="project_img">
+                                <img class="work_img" src="/images/work/emotion_diary.PNG">
+                            </div>  
+                            <h3 class="project_title">EMOTION DIARY</h3>
                             <h3 class="content">일기에 감정까지 함께 기록할 수 일기장 사이트로<br>
                             등록순과 날짜별로 확인이 가능합니다.</h3>
-                            <button class="content_tab" onclick="window.open('https://emotiondiary-cheabeens-projects.vercel.app/', '_blank')">보러가기</button>
-                            <div class="skills">
-                                <span>React</span>
+                            <div class="skill">
+                                Skillsㅣ react
                             </div>
-                        </div>
-                    </div>
+                            <button class="content_tab" onclick="window.open('https://emotiondiary-cheabeens-projects.vercel.app/', '_blank')">보러가기</button>
+                            </div>      
+                        </div>    
+                    </div> 
                 </div>
+                <!--3번-->
                 <div class="project_container">
-                    <h2 class="h2_right">YOUTUBE</h2>
                     <div class="project_wrapper">
                         <div class="project_item">
-                            <h3 class="content">유튜브 오픈 api를 이용해서<br>
-                                실제 유튜브 데이터로 만든<br>유튜브 클론 코딩 사이트 입니다.</h3>
-                            <button class="content_tab" onclick="window.open('https://youtube-omega-pink.vercel.app/', '_blank')">보러가기</button>
-                            <div class="skills">
-                                <span>React</span>
+                            <div class="project_img">
+                                <img class="work_img" src="/images/work/youtube.jpg">
+                            </div>    
+                            <h3 class="project_title">YOUTUBE</h3>
+                            <h3 class="content">
+                            유튜브 오픈 api를 이용해서<br>
+                            실제 유튜브 데이터로 만든<br>
+                            유튜브 클론 코딩 사이트로
+                            검색 기능과 동영상 재생 또한 가능합니다.</h3>
+                            <div class="skill">
+                                Skillsㅣ react
                             </div>
-                        </div>
-                        <div class="project_img">
-                            <img class="work_img" src="/images/work/youtube.jpg">
-                        </div>
-                        
+                            <button class="content_tab" onclick="window.open('https://youtube-omega-pink.vercel.app/', '_blank')">보러가기</button>
+                            </div>  
+                        <div class="project_item">
+                            <div class="project_img">
+                                <img class="work_img" src="/images/work/popup.PNG">
+                            </div>
+                            <h3 class="project_title">STORE</h3>
+                            <h3 class="content">
+                            현재 진행중인 프로젝트로<br> 
+                            팝업스토어나 전시회, 행사 등<br>
+                            다양한 볼거리의 정보들을 제공하는 사이트입니다.<br>
+                            백엔드 개발자와 프론트엔드 개발자, 총 6명의 인원으로 구성되어 있으며<br>
+                            현재 디자인과 퍼블리싱 포지션을 맡고 있습니다.<br>
+                            </h3>  
+                        </div>    
                     </div> 
                 </div>
             </div>
         </section>
-        <!-- Arrow up -->
-        <aside>
-            <a class="arrow-up" href="#home" title="back to top">
-                <img class="arrow_up_icon" src="/images/arrow_top.png">
-            </a>
-        </aside>
     </main>
     <!-- Footer -->
     <footer id="contact" class="section">
         <div class="max-container">
             <div class="footer_fade">
-                <p class="footer_title">현재에 머무르지 않고,<br>꾸준히 노력하는 개발자가 되겠습니다.<br>감사합니다.</p>
+                <p class="footer_title">현재에 머무르지 않고,<br>꾸준히 발전하는 모습 보여드리겠습니다.<br>감사합니다.</p>
             </div>
         </div>
-            <div class="footer_me">Copyright 2024. chaebeen all rights reserved.</div>
+        <div class="item_container">
+            <a class="footer_item" href="https://github.com/jicherry" target="_blank" title="my github link">
+            <img src="images/git.png">
+            <a class="footer_item" href="https://velog.io/@chaebeen125/posts" target="_blank" title="my velog link">
+            <img src="images/v-log.webp">
+            <a class="footer_item" href="mailto:cjstkeldkdl0@naver.com" target="_blank" title="cjstkeldkdl0@naver.com"><img src="images/mail.png">
+        </div>
+        <div class="footer_me">Copyright 2024. chaebeen all rights reserved.
+        </div>
     </footer>
+    <!-- Arrow up -->
+    <aside>
+        <a class="arrow-up" href="#home" title="back to top">
+            <img class="arrow_up_icon" src="/images/arrow_top.png">
+        </a>
+    </aside>
 </body>
 </html> 
