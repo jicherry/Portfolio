@@ -84,6 +84,7 @@ button {
 
 .header {
   top: 0;
+  left: 0;
   display: flex;
   position: fixed;
   width: 100%;
@@ -137,6 +138,7 @@ button {
 /* Home */
 
 #home {
+  display: flex;
   background-color: #ffffff;
   color: var(--color-black);
   height: 100vh;
@@ -269,6 +271,12 @@ button {
   text-align: center;
   color: #202020;
   font-weight: bold;
+}
+
+.project_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .project_container {
