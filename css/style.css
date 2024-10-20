@@ -226,7 +226,7 @@ button {
 
 #about_content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .me_img {
@@ -246,14 +246,14 @@ button {
   color: #202020;
   line-height: 3rem;
   text-align: left;
-  margin-left: 3rem;
+  margin-left: 5rem;
 }
 
 .me_content2 {
   line-height: 2rem;
   margin-top: 1.3rem;
   text-align: left;
-  margin-left: 3rem;
+  margin-left: 5rem;
 }
 
 /* Project */
@@ -274,9 +274,9 @@ button {
 }
 
 .project_wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
   gap: 2rem;
+  justify-content: center;
 }
 
 .project_container {
