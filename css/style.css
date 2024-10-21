@@ -450,45 +450,70 @@ button {
   }
 
   /* header */
-  .header_wrapper {
+
+  .header {
     display: flex;
-    justify-content: center;
+  }
+
+  .nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main_container {
+    font-size: 0.7rem;
   }
 
   /* home */
-  .home_title {
-    font-size: 2.7rem;
-    margin-top: 10rem;
+  .home_title1 {
+    font-size: 3.5rem;
+    margin-top: 20rem;
   }
 
-  .home_title.left {
-    margin-left: 2rem;
-    animation: slideInLeft 1s forwards;
-    margin-bottom: -9rem;
+  .home_title2 {
+    font-size: 3.5rem;
+    margin-top: 5rem;
   }
 
-  .home_title.right {
-    margin-right: 2rem;
+  /* about me */
+
+  #about_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .home_arrow {
-    margin-top: 3rem;
+  .a_title {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .me_img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .me_content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .me_content2 {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* project */
 
   .p_title {
+    text-align: center;
     font-size: 2rem;
-    letter-spacing: 1rem;
   }
 
   .work_img {
-    width: 10rem;
-    height: 10rem;
-  }
-
-  .project_container h2 {
-    font-size: 1.5rem;
+    width: 12rem;
+    height: 12rem;
   }
 
   .content {
@@ -498,35 +523,11 @@ button {
     margin-top: 0;
   }
 
-  .h2_right {
-    text-align: right;
-    margin-left: 7rem;
-    font-size: 1rem;
-  }
-
   .content_tab {
     margin-top: 1rem;
     font-size: 0.7rem;
     width: 5rem;
     padding: 0.3rem 0.3rem;
-  }
-
-  .skills {
-    margin-top: -2.3rem;
-  }
-
-  /* arrow */
-  .arrow-up {
-    width: 1.5rem;
-    height: 1.5rem;
-    bottom: 2rem;
-    right: 1.5rem;
-  }
-
-  .arrow_up_icon {
-    width: 1rem;
-    height: 1rem;
-    margin-bottom: 1.8rem;
   }
 
   /* footer */
@@ -536,5 +537,19 @@ button {
 
   .footer_me {
     font-size: 0.7rem;
+  }
+
+  /* arrow */
+  .arrow-up {
+    width: 1.5rem;
+    height: 1.5rem;
+    bottom: 3rem;
+    right: 1.5rem;
+  }
+
+  .arrow_up_icon {
+    width: 1rem;
+    height: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
