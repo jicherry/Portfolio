@@ -14,14 +14,8 @@
     <mata property="og: url" content="배포 후에 생성된 URL" />
     <mata property="og: image" content="배포 후에 생성된 이미지 URL" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome -->
     <script 
     src="https://kit.fontawesome.com/ab09071e3d.js" 
@@ -34,7 +28,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="acceptSection">
         <div>
             <a class="main_home" href="index.html"><i class="fa-solid fa-house"></i></a>
         </div>
@@ -68,9 +62,8 @@
                         HTML, CSS, JavaScript 등을 활용하여<br> 사용자 친화적인 웹사이트를 만드는 것을 목표로 하고 있습니다.<br>
                         그린컴퓨터아카데미에서
                         웹 개발 양성 과정을 수료하였고,<br>
-                        이후 한국정보교육원에서는
-                        웹 프론트엔드 클라우드<br> 
-                        콘솔 개발자 양성 과정을 수료하였습니다.
+                        이후 더조은 컴퓨터아카데미에서 퍼블리싱 과정과<br>
+                        한국정보교육원에서 웹 프론트엔드 클라우드 콘솔 개발자 <br>양성 과정을 수료하였습니다.
                     </p>
                 </div>
             </div>
@@ -87,13 +80,17 @@
                                 <img class="work_img" src="/images/work/memoryGame.jpg" alt="티니핑 사진">
                             </div>
                             <h3 class="project_title">memory game</h3>
-                            <h3 class="content">티피닝 캐릭터로 만든 memory game은<br>
-                                캐릭터가 있는 카드의 앞면을 화면에 3초 동안 보여줍니다.<br> 
-                                3초 뒤, 플레이어는 카드의 위치와 캐릭터를 기억해서<br>
-                                짝이 맞는 카드를 찾아 짝을 맞추는 간단한 게임입니다.</h3>
+                            <h3 class="content">memory game 프로젝트는 <br>
+                                JavaScript 학습을 위한 개인 프로젝트로 <br>
+                                티니핑 캐릭터를 활용한 간단한 카드 게임입니다. <br>
+                                메인 페이지는 게임 시작 버튼과 게임 방법 안내가 포함되어 있고,<br>
+                                start 버튼을 클릭 시 게임 페이지로 이동합니다.<br>
+                                게임 방식은 3초 동안 카드의 앞면을 보여지고,<br>
+                                이후 뒤집힌 카드의 위치를 기억해 짝이 맞는 카드를 찾아야 합니다.
+                               </h3>
                                 <div class="skill">
-                                    Skillsㅣ HTML5, 
-                                    CSS3,
+                                    Skillsㅣ HTML, 
+                                    CSS,
                                     JavaScript
                                 </div>
                             <button class="content_tab" onclick="window.open('https://card-game-livid.vercel.app/', '_blank')">보러가기</button>
@@ -103,11 +100,18 @@
                                     <img class="work_img" src="/images/work/hp2.PNG" alt="세럼카인드 사진">
                                 </div>
                                 <h3 class="project_title">SERUMKIND</h3>
-                                <h3 class="content">화장품 브랜드를<br> 참고하여 만든 뷰티 쇼핑몰 사이트로<br> 
-                                메인 페이지와 상품 페이지로 구성되어 있습니다.</h3>
+                                <h3 class="content">기존에 존재하는 화장품 브랜드 사이트를 참고해<br>
+                                    재구성하여 만든 뷰티 쇼핑몰 사이트로<br> 
+                                    처음 수료한 교육과정에서 만든 개인 프로젝트입니다.<br>
+                                    사이트는 메인 페이지와 상품 페이지로 구성되어 있으며,<br>
+                                    css의 hover 효과와, jQuery로 동영상으로 삽입,<br>
+                                    그리고 JavaScript 라이브러리 Swiper를<br>
+                                    이용해 시각적으로 돋보이도록 구현하였습니다.
+                                </h3>
+
                                 <div class="skill">
-                                    Skillsㅣ HTML5, 
-                                    CSS3,
+                                    Skillsㅣ HTML, 
+                                    CSS,
                                     JavaScript,
                                     jQuery
                                 </div>
@@ -124,9 +128,13 @@
                                 <img class="work_img" src="/images/work/longines.PNG" alt="론진 모델 수지 사진">
                             </div>
                             <h3 class="project_title">longines</h3>
-                            <h3 class="content">리액트 서비스 기반으로 만든 론진 시계 사이트로<br>
-                            로그인시 상세페이지에서 장바구니에 상품 추가가 가능하며<br>
-                            어드민 계정은 상품 등록 또한 가능합니다.</h3>
+                            <h3 class="content">시계 브랜드 론진 사이트를 참고하여 만든 프로젝트로<br>
+                                리액트 학습을 위해 진행한 개인 프로젝트입니다.<br>
+                                로그인은 Firebase의 인증 기능을 이용하여 소셜 로그인을 구현하였고,<br>
+                                장바구니에 상품 추가 기능 또한 Firebase에서 제공하는<br>
+                                실시간 데이터베이스 기능을 활용하였습니다.<br>
+                                다른 디바이스에서 로그인을 하여도 같은 계정이라면<br>
+                                실시간으로 장바구니 내용을 확인할 수 있습니다.</h3>
                             <div class="skill">
                                 Skillsㅣ react, 
                                 tailwind css
@@ -139,7 +147,13 @@
                             </div>  
                             <h3 class="project_title">EMOTION DIARY</h3>
                             <h3 class="content">일기에 감정까지 함께 기록할 수 일기장 사이트로<br>
-                            등록순과 날짜별로 확인이 가능합니다.</h3>
+                                이 프로젝트 또한 리액트 학습을 위해 진행한 개인 프로젝트입니다.<br>
+                            일기는 등록순과 날짜별로 확인이 가능하며,<br>
+                            한번 쓴 일기는 사라지지 않고 브라우저 저장소에 저장되어<br>
+                            재접속 하여도 일기를 확인할 수 있습니다.<br>
+                            또한 다양한 디바이스에서 최적화된 사용자 경험을 제공하기 위해<br>
+                            미디어 쿼리와 유동적 시스템을 활용하여 반응형 웹 디자인을 구현했습니다.
+                            </h3>
                             <div class="skill">
                                 Skillsㅣ react
                             </div>
@@ -157,10 +171,12 @@
                             </div>    
                             <h3 class="project_title">YOUTUBE</h3>
                             <h3 class="content">
-                            유튜브 오픈 api를 이용해서<br>
-                            실제 유튜브 데이터로 만든<br>
-                            유튜브 클론 코딩 사이트로
-                            검색 기능과 동영상 재생 또한 가능합니다.</h3>
+                            유튜브 오픈 api를 이용해서 실제 유튜브 데이터로 만든<br>
+                            유튜브 클론 코딩 사이트로, 실제 유튜브 사이트처럼<br>
+                            검색 기능과 동영상 재생 또한 가능합니다.<br>
+                            재생기능은 아이프레임을 이용해서 영상이 재생되도록 구현하였습니다.</h3>
+
+
                             <div class="skill">
                                 Skillsㅣ react
                             </div>
